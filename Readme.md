@@ -42,8 +42,11 @@ Ensure you have the following installed:
 ## Webpack Configuration
 The project includes a `webpack.config.js` file that compiles React components into standard JavaScript and HTML. Ensure you have the necessary dependencies installed:
 ```bash
+
 npm install webpack webpack-cli babel-loader @babel/core @babel/preset-react react react-dom
 ```
+
+
 
 
 
