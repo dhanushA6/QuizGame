@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Interactive Quiz</title> 
+    <link rel="stylesheet" href="../css/quiz.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-section">
+            <div class="question-content">
+                <div class="question-number">Question 1/5</div>
+                <div class="question-text">Loading question...</div>
+                <ul class="quiz-options"></ul>
+            </div>
+            <div class="navigation-buttons">
+                <button class="prev-btn" disabled>
+                    <span>←</span> Previous
+                </button>
+                <button class="next-btn">
+                    Next <span>→</span>
+                </button>
+            </div>
+        </div>
+        <div class="iframe-section">
+            <iframe 
+                src="../game/index.html"
+                allowfullscreen 
+                loading="lazy"
+                scrolling="no"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
