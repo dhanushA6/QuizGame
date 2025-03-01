@@ -229,7 +229,7 @@ button:disabled {
     }
 
     .iframe-section {
-        height: 50vh !important;
+        height: 60vh !important;
         min-height: 400px;
         order: 1;
     }
@@ -246,7 +246,7 @@ button:disabled {
     }
 
     .iframe-section {
-        height: 45vh !important;
+        height: 90vh !important;
         min-height: 350px;
     }
 
@@ -316,7 +316,7 @@ button:disabled {
 
     .iframe-section {
         height: 85vh;
-        max-height: 1200px;
+        max-height: 1300px;
         border-radius: 30px;
     }
 

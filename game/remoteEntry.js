@@ -19,18 +19,12 @@ var kta_utchol;
     v,
     m,
     g,
-    y,
     b,
-    k,
-    w,
-    S,
-    P = {
+    y = {
       887: (e, r, t) => {
         var o = {
             "./LandingPage": () =>
-              Promise.all([t.e(914), t.e(679), t.e(539)]).then(
-                () => () => t(539)
-              ),
+              Promise.all([t.e(914), t.e(539)]).then(() => () => t(539)),
           },
           n = (e, r) => (
             (t.R = r),
@@ -58,33 +52,33 @@ var kta_utchol;
         t.d(r, { get: () => n, init: () => a });
       },
     },
-    j = {};
-  function O(e) {
-    var r = j[e];
+    k = {};
+  function w(e) {
+    var r = k[e];
     if (void 0 !== r) return r.exports;
-    var t = (j[e] = { exports: {} });
-    return P[e](t, t.exports, O), t.exports;
+    var t = (k[e] = { id: e, exports: {} });
+    return y[e](t, t.exports, w), t.exports;
   }
-  (O.m = P),
-    (O.c = j),
-    (O.n = (e) => {
+  (w.m = y),
+    (w.c = k),
+    (w.n = (e) => {
       var r = e && e.__esModule ? () => e.default : () => e;
-      return O.d(r, { a: r }), r;
+      return w.d(r, { a: r }), r;
     }),
-    (O.d = (e, r) => {
+    (w.d = (e, r) => {
       for (var t in r)
-        O.o(r, t) &&
-          !O.o(e, t) &&
+        w.o(r, t) &&
+          !w.o(e, t) &&
           Object.defineProperty(e, t, { enumerable: !0, get: r[t] });
     }),
-    (O.f = {}),
-    (O.e = (e) =>
-      Promise.all(Object.keys(O.f).reduce((r, t) => (O.f[t](e, r), r), []))),
-    (O.u = (e) => e + ".js"),
-    (O.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
+    (w.f = {}),
+    (w.e = (e) =>
+      Promise.all(Object.keys(w.f).reduce((r, t) => (w.f[t](e, r), r), []))),
+    (w.u = (e) => e + ".js"),
+    (w.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
     (e = {}),
     (r = "kta_utchol:"),
-    (O.l = (t, o, n, a) => {
+    (w.l = (t, o, n, a) => {
       if (e[t]) e[t].push(o);
       else {
         var i, u;
@@ -107,7 +101,7 @@ var kta_utchol;
           ((u = !0),
           ((i = document.createElement("script")).charset = "utf-8"),
           (i.timeout = 120),
-          O.nc && i.setAttribute("nonce", O.nc),
+          w.nc && i.setAttribute("nonce", w.nc),
           i.setAttribute("data-webpack", r + n),
           (i.src = t)),
           (e[t] = [o]);
@@ -131,23 +125,23 @@ var kta_utchol;
           u && document.head.appendChild(i);
       }
     }),
-    (O.r = (e) => {
+    (w.r = (e) => {
       "undefined" != typeof Symbol &&
         Symbol.toStringTag &&
         Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
         Object.defineProperty(e, "__esModule", { value: !0 });
     }),
     (() => {
-      O.S = {};
+      w.S = {};
       var e = {},
         r = {};
-      O.I = (t, o) => {
+      w.I = (t, o) => {
         o || (o = []);
         var n = r[t];
         if ((n || (n = r[t] = {}), !(o.indexOf(n) >= 0))) {
           if ((o.push(n), e[t])) return e[t];
-          O.o(O.S, t) || (O.S[t] = {});
-          var a = O.S[t],
+          w.o(w.S, t) || (w.S[t] = {});
+          var a = w.S[t],
             i = "kta_utchol",
             u = (e, r, t, o) => {
               var n = (a[e] = a[e] || {}),
@@ -158,25 +152,22 @@ var kta_utchol;
             l = [];
           return (
             "default" === t &&
-              (u("axios", "1.7.9", () => O.e(447).then(() => () => O(447))),
+              (u("axios", "1.7.9", () => w.e(447).then(() => () => w(447))),
               u("react-dom", "18.3.1", () =>
-                Promise.all([O.e(961), O.e(914)]).then(() => () => O(961))
+                Promise.all([w.e(961), w.e(914)]).then(() => () => w(961))
               ),
               u("react-router-dom", "6.28.2", () =>
-                Promise.all([O.e(648), O.e(914), O.e(676)]).then(
-                  () => () => O(648)
+                Promise.all([w.e(648), w.e(914), w.e(676)]).then(
+                  () => () => w(648)
                 )
               ),
-              u("react", "18.3.1", () => O.e(540).then(() => () => O(159))),
-              u("styled-components", "6.1.14", () =>
-                Promise.all([O.e(581), O.e(914)]).then(() => () => O(581))
-              )),
+              u("react", "18.3.1", () => w.e(540).then(() => () => w(159)))),
             (e[t] = l.length ? Promise.all(l).then(() => (e[t] = 1)) : 1)
           );
         }
       };
     })(),
-    (O.p = ""),
+    (w.p = ""),
     (t = (e) => {
       var r = (e) => e.split(".").map((e) => (+e == e ? +e : e)),
         t = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
@@ -284,27 +275,18 @@ var kta_utchol;
       }
       return !!c();
     }),
-    (i = (e, r) => e && O.o(e, r)),
+    (i = (e, r) => e && w.o(e, r)),
     (u = (e) => ((e.loaded = 1), e.get())),
     (l = (e) =>
       Object.keys(e).reduce((r, t) => (e[t].eager && (r[t] = e[t]), r), {})),
-    (s = (e, r, t, n) => {
-      var i = n ? l(e[r]) : e[r];
-      return (
-        (r = Object.keys(i).reduce(
-          (e, r) => (!a(t, r) || (e && !o(e, r)) ? e : r),
-          0
-        )) && i[r]
-      );
-    }),
-    (f = (e, r, t) => {
+    (s = (e, r, t) => {
       var n = t ? l(e[r]) : e[r];
       return Object.keys(n).reduce(
         (e, r) => (!e || (!n[e].loaded && o(e, r)) ? r : e),
         0
       );
     }),
-    (d = (e, r, t, o) =>
+    (f = (e, r, t, o) =>
       "Unsatisfied version " +
       t +
       " from " +
@@ -314,91 +296,65 @@ var kta_utchol;
       " (required " +
       n(o) +
       ")"),
-    (h = (e, r, t, o, a) => {
-      var i = e[t];
-      return (
-        "No satisfying version (" +
-        n(o) +
-        ")" +
-        (a ? " for eager consumption" : "") +
-        " of shared module " +
-        t +
-        " found in shared scope " +
-        r +
-        ".\nAvailable versions: " +
-        Object.keys(i)
-          .map((e) => e + " from " + i[e].from)
-          .join(", ")
-      );
-    }),
-    (c = (e) => {
+    (d = (e) => {
       throw new Error(e);
     }),
-    (p = (e) => {
+    (h = (e) => {
       "undefined" != typeof console && console.warn && console.warn(e);
     }),
-    (m = (e, r, t) =>
+    (c = (e, r, t) =>
       t
         ? t()
         : ((e, r) =>
-            c("Shared module " + r + " doesn't exist in shared scope " + e))(
+            d("Shared module " + r + " doesn't exist in shared scope " + e))(
             e,
             r
           )),
-    (g = (v = (e) =>
+    (p = ((e) =>
       function (r, t, o, n, a) {
-        var i = O.I(r);
+        var i = w.I(r);
         return i && i.then && !o
-          ? i.then(e.bind(e, r, O.S[r], t, !1, n, a))
-          : e(r, O.S[r], t, o, n, a);
-      })((e, r, t, o, n, a) => {
-      if (!i(r, t)) return m(e, t, a);
-      var l = s(r, t, n, o);
-      return l ? u(l) : a ? a() : void c(h(r, e, t, n, o));
+          ? i.then(e.bind(e, r, w.S[r], t, !1, n, a))
+          : e(r, w.S[r], t, o, n, a);
+      })((e, r, t, o, n, l) => {
+      if (!i(r, t)) return c(e, t, l);
+      var d = s(r, t, o);
+      return a(n, d) || h(f(r, t, d, n)), u(r[t][d]);
     })),
-    (y = v((e, r, t, o, n, l) => {
-      if (!i(r, t)) return m(e, t, l);
-      var s = f(r, t, o);
-      return a(n, s) || p(d(r, t, s, n)), u(r[t][s]);
-    })),
-    (b = {}),
-    (k = {
+    (v = {}),
+    (m = {
       914: () =>
-        y("default", "react", !1, [1, 18, 2, 0], () =>
-          O.e(540).then(() => () => O(159))
+        p("default", "react", !1, [1, 18, 2, 0], () =>
+          w.e(540).then(() => () => w(159))
         ),
       676: () =>
-        y("default", "react-dom", !1, [1, 18, 3, 1], () =>
-          O.e(961).then(() => () => O(961))
-        ),
-      679: () =>
-        g("default", "styled-components", !1, [1, 6, 1, 1], () =>
-          O.e(581).then(() => () => O(581))
+        p("default", "react-dom", !1, [1, 18, 3, 1], () =>
+          w.e(961).then(() => () => w(961))
         ),
     }),
-    (w = { 676: [676], 679: [679], 914: [914] }),
-    (S = {}),
-    (O.f.consumes = (e, r) => {
-      O.o(w, e) &&
-        w[e].forEach((e) => {
-          if (O.o(b, e)) return r.push(b[e]);
-          if (!S[e]) {
+    (g = { 676: [676], 914: [914] }),
+    (b = {}),
+    (w.f.consumes = (e, r) => {
+      w.o(g, e) &&
+        g[e].forEach((e) => {
+          if (w.o(v, e)) return r.push(v[e]);
+          if (!b[e]) {
             var t = (r) => {
-              (b[e] = 0),
-                (O.m[e] = (t) => {
-                  delete O.c[e], (t.exports = r());
+              (v[e] = 0),
+                (w.m[e] = (t) => {
+                  delete w.c[e], (t.exports = r());
                 });
             };
-            S[e] = !0;
+            b[e] = !0;
             var o = (r) => {
-              delete b[e],
-                (O.m[e] = (t) => {
-                  throw (delete O.c[e], r);
+              delete v[e],
+                (w.m[e] = (t) => {
+                  throw (delete w.c[e], r);
                 });
             };
             try {
-              var n = k[e]();
-              n.then ? r.push((b[e] = n.then(t).catch(o))) : t(n);
+              var n = m[e]();
+              n.then ? r.push((v[e] = n.then(t).catch(o))) : t(n);
             } catch (e) {
               o(e);
             }
@@ -407,20 +363,20 @@ var kta_utchol;
     }),
     (() => {
       var e = { 161: 0 };
-      O.f.j = (r, t) => {
-        var o = O.o(e, r) ? e[r] : void 0;
+      w.f.j = (r, t) => {
+        var o = w.o(e, r) ? e[r] : void 0;
         if (0 !== o)
           if (o) t.push(o[2]);
-          else if (/^(67[69]|914)$/.test(r)) e[r] = 0;
+          else if (/^(676|914)$/.test(r)) e[r] = 0;
           else {
             var n = new Promise((t, n) => (o = e[r] = [t, n]));
             t.push((o[2] = n));
-            var a = O.p + O.u(r),
+            var a = w.p + w.u(r),
               i = new Error();
-            O.l(
+            w.l(
               a,
               (t) => {
-                if (O.o(e, r) && (0 !== (o = e[r]) && (e[r] = void 0), o)) {
+                if (w.o(e, r) && (0 !== (o = e[r]) && (e[r] = void 0), o)) {
                   var n = t && ("load" === t.type ? "missing" : t.type),
                     a = t && t.target && t.target.src;
                   (i.message =
@@ -442,16 +398,16 @@ var kta_utchol;
             [a, i, u] = t,
             l = 0;
           if (a.some((r) => 0 !== e[r])) {
-            for (o in i) O.o(i, o) && (O.m[o] = i[o]);
-            u && u(O);
+            for (o in i) w.o(i, o) && (w.m[o] = i[o]);
+            u && u(w);
           }
           for (r && r(t); l < a.length; l++)
-            (n = a[l]), O.o(e, n) && e[n] && e[n][0](), (e[n] = 0);
+            (n = a[l]), w.o(e, n) && e[n] && e[n][0](), (e[n] = 0);
         },
         t = (self.webpackChunkkta_utchol = self.webpackChunkkta_utchol || []);
       t.forEach(r.bind(null, 0)), (t.push = r.bind(null, t.push.bind(t)));
     })(),
-    (O.nc = void 0);
-  var x = O(887);
-  kta_utchol = x;
+    (w.nc = void 0);
+  var S = w(887);
+  kta_utchol = S;
 })();
